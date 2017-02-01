@@ -12,6 +12,7 @@ class Question extends Model {
 
 	protected $table = 'questions';
 	protected $fillable = ['question','user_id'];
+    protected $dates = ['deleted_at'];
 
 	 public function answers()
     {
